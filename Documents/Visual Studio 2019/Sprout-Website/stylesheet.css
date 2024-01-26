@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'Instrument-Serif';
+    src: url(fonts/InstrumentSerif-Italic.ttf);
+}
+
+@font-face{
+    font-family: 'Open-Sans';
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf)
+}
+
+@font-face{
+  font-family: 'Domine';
+  src: url(fonts/Domine-VariableFont_wght.ttf)
+}
+
+
+
+
+
+
+
+
+
+
+
+html.has-scroll-smooth {
+  overflow: hidden; }
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.has-scroll-smooth body {
+  overflow: hidden; }
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh; }
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap; }
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%; }
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0; }
+  .c-scrollbar:hover {
+    transform: scaleX(1.45); }
+  .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+    opacity: 1; }
+  [data-scroll-direction="horizontal"] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1); }
+    [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+      transform: scaleY(1.3); }
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab; }
+  .has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+  [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:#DBDBCA;
+}
+.videoClass{
+}
+
+#myVideo {
+    border-radius: 50px;
+    width: 100%;
+    max-height:80%;
+    height: 75vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #logoDiv {
+    padding:0px;
+    margin-top:-40px;
+    align-items: center;
+}
+
+#logo{
+    height: 200px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+li {
+    display: inline-block;
+    color:#3D9776;
+    margin-left: 50px; /* Adjust margin as needed */
+    margin-right:50px;
+}
+
+#navLeft {
+    text-align: left;
+}
+
+a {
+    color: black;
+    display:inline-block;
+    margin:0;
+    text-transform:uppercase; 
+    text-decoration: none;
+
+}
+
+a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #980F20;  
+  transform: scaleX(0);  
+  transition: transform 200ms ease-in-out;
+  transform-origin:  0% 50%;
+}
+a:hover:after { transform: scaleX(1); }
+
+
+
+.infoDiv{
+    position: absolute;
+    right:10px;
+    bottom:100px;
+
+}
+.statement{
+    color: white;
+    font-size:60px;
+}
+.centralInfo{
+    position: relative;
+    bottom: 100px;
+    right: 0px;
+    padding: 50px; 
+    padding-bottom:0px;
+}
+
+.centralButton{
+    font-size:30px;
+}
+.learnMore{
+    padding:0px;
+    margin:0px;
+}
+
+
+.priceHeader{
+  font-family:'Open-Sans';
+  font-size:50px;
+  text-align: center;
+
+}
+
+.green{
+  color:green;
+}
+.pair{
+    display:flex;
+    align-items: center;
+    flex-basis: 0;
+    flex-grow:1;
+    flex-shrink:0;
+
+}
+.textLeft{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:50%;
+    text-align: center;
+}
+.wordRight{
+    font-family: 'Instrument-Serif';
+    width:50%;
+    color:#005A86;
+    text-align:center;
+    font-size:150px;
+    opacity: 80%;
+}
+
+.idk{
+    border-top:#980F20 1px solid;
+    padding:20px;
+    width:85%;
+    margin:auto
+}
+
+.right{
+    width:50%;
+    padding-right:50px;
+}
+
+.centerDiv{
+  display:flex;
+  justify-content: center;
+}
+
+.leftRight{
+    border-top:#980F20 5px solid;
+    padding-top:10px;
+    width:85%;
+    text-align: center;
+    margin:auto;
+    display: flex;
+}
+
+
+.fancy {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .effect {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .pull-up {
+    opacity: 1;
+    transform: translateY(0);
+    animation: pullUp 0.5s ease;
+  }
+  
+  @keyframes pullUp {
+    0% {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  .accordion {
+    max-width: 50%;
+    right: 0;
+    margin: 20px 0 20px auto; /* Adjusted margin for right alignment */
+}
+
+/* Rest of your existing styles remain unchanged */
+
+  .accordion-item {
+    margin-bottom: 5px;
+    overflow: hidden;
+    border: none; /* Remove border */
+  }
+  
+  .accordion-header {
+    background-color: #DBDBCA;
+    letter-spacing: -2px;
+    padding: 10px; /* Adjusted padding for better spacing */
+    cursor: pointer;
+    position: relative;
+    display: inline-block; /* Ensure inline block display for dynamic width */
+}
+
+  .header-text{
+    font-family:'Open-Sans';
+    font-weight:500;
+  }
+  
+  .accordion-content {
+    color:#2b2b28;
+    font-family:'Open-Sans';
+    line-height: 200%;
+    font-size:large;
+    padding: 10px;
+    padding-right:20%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Added visibility transition */
+  }
+  
+  .active .accordion-content {
+    max-height: 1000px; /* Adjust a reasonable max-height value */
+    visibility: visible; /* Ensure visibility when content is expanded */
+    transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Added visibility transition */
+  }
+  
+
+  .arrow {
+    position: absolute;
+    top: 35%;
+    left: calc(100%);
+    transition: transform 0.3s ease; /* Added transition property for rotation */
+    transform: rotate(0deg);
+}
+
+.arrow img {
+    width: 40px; /* Set the width of the SVG */
+    height: 40px; /* Set the height of the SVG */
+    transition: transform 0.3s ease; /* Added transition property */
+}
+
+
+.arrow.clicked {
+    transform:  rotate(180deg);
+}
+
+.accordion-header:hover .arrow {
+    filter: brightness(80%); /* Darken on hover */
+}
+  
