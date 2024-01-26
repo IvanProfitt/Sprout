@@ -269,7 +269,7 @@ a:hover:after { transform: scaleX(1); }
 }
 
 .leftRight{
-    border-top:#980F20 5px solid;
+    border-top:#980F20 2px solid;
     padding-top:10px;
     width:85%;
     text-align: center;
@@ -384,3 +384,75 @@ a:hover:after { transform: scaleX(1); }
     filter: brightness(80%); /* Darken on hover */
 }
   
+
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex: 1;
+  text-align: left;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo p {
+  margin: 0;
+}
+
+.navigation {
+  flex: 1;
+  text-align: center;
+}
+
+.navigation h3 {
+  display: none; /* Hide the "Navigation" heading */
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media {
+  flex: 1;
+  text-align: right;
+}
+
+.social-media h3 {
+  display: none; /* Hide the "Follow Us" heading */
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
