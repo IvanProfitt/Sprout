@@ -3,6 +3,11 @@
     src: url(fonts/InstrumentSerif-Italic.ttf);
 }
 
+@font-face {
+  font-family: 'Instrument-Serif-Regular';
+  src: url(fonts/InstrumentSerif-Regular.ttf);
+}
+
 @font-face{
     font-family: 'Open-Sans';
     src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf)
@@ -45,14 +50,15 @@ header {
 
 /* Navigation Styles */
 .navBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   width: 100%;
 }
 
 .nav {
   list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
   margin-top: 50px;
   padding: 20px;
 }
@@ -64,7 +70,7 @@ header {
   margin-right: 50px;
 }
 
-#navLeft {
+.navLeft {
   text-align: left;
 }
 
@@ -94,8 +100,10 @@ header {
   font-size: 30px;
 }
 
+
+
+
 /* Video Styles */
-.videoClass {}
 
 #myVideo {
   border-radius: 50px;
@@ -165,9 +173,19 @@ header {
 
 
 
-
+.missionStatement{
+  align-self: center;
+  text-align: center;
+  width:70%;
+  font-family: 'Instrument-Serif-regular';
+  color: #003673;
+  text-align: center;
+  font-size: 50px;
+  opacity: 80%;
+}
 /* Price Section Styles */
 .priceHeader {
+  margin-top:30px;
   font-family: 'Open-Sans';
   font-size: 50px;
   text-align: center;
@@ -201,17 +219,45 @@ header {
   opacity: 80%;
 }
 
+
+
 /* Statement Section Styles */
 .statementSection {
-  border-top: #980F20 1px solid;
   padding: 20px;
   width: 85%;
   margin: auto;
 }
 
 .right {
-  width: 50%;
+  width: 70%;
   padding-right: 50px;
+  padding-bottom:50px;
+}
+
+.list-group{
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 10%;
+  padding:50px
+}
+.list-item{
+  text-align: left;
+}
+
+.list-item-content{
+  display: flex;
+  align-items: start;
+}
+
+.list-header{
+  margin-top:1px;
+}
+
+.leafImg{
+  filter: invert(49%) sepia(60%) saturate(402%) hue-rotate(71deg) brightness(89%) contrast(90%);
+  height: 25px;
+  margin-right:10px;
 }
 
 .centerDiv {
@@ -220,13 +266,26 @@ header {
 }
 
 /* Left Right Section Styles */
+
+.pricingInfo{
+  background-color: #DBDBCA;
+  padding-bottom:100px;
+  background-size: cover;
+}
 .leftRight {
-  border-top: #980F20 5px solid;
   padding-top: 10px;
   width: 85%;
   text-align: center;
   margin: auto;
   display: flex;
+}
+.left{
+  align-items: center;
+  margin:auto;
+}
+
+.coder{
+  width:80%
 }
 
 /* Animation Styles */
@@ -314,7 +373,7 @@ header {
 /* Hover styles for accordion header and arrow */
 .accordion-header:hover,
 .accordion-header:hover .arrowLearn img:hover {
-  color: #888; /* Change to the desired grey color */
+  color: #005A86; /* Change to the desired grey color */
 }
 
 
